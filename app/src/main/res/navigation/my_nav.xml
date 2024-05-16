@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/viewAllUsersFragment">
+
+    <fragment
+        android:id="@+id/addUserFragment"
+        android:name="com.ahmedkenawy.user.ui.add.AddUserFragment"
+        android:label="AddUserFragment"
+        tools:layout="@layout/fragment_add_user" />
+    <fragment
+        android:id="@+id/viewAllUsersFragment"
+        android:name="com.ahmedkenawy.user.ui.view_all.ViewAllUsersFragment"
+        android:label="ViewAllUsersFragment" >
+        <action
+            android:id="@+id/action_viewAllUsersFragment_to_addUserFragment"
+            app:destination="@id/addUserFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/viewAllUsersFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>
