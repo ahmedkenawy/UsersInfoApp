@@ -23,4 +23,4 @@ A simple Android application designed to save user information locally and displ
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/yourusername/user-info-app.git
+   git clone https://github.com/ahmedkenawy/UsersInfoApp.git
